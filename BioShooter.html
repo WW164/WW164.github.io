@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
     <link rel="stylesheet" href="assets/css/projects.css"/>
 </head>
-<body class="is-preload">
+<body class="is-preload" style="color: black">
 
 <!-- Header -->
 
@@ -22,7 +22,7 @@
 <div id="main">
 
     <!-- Intro -->
-    <section id="top" class="one dark cover">
+    <section id="top" class="top">
         <div class="container">
 
             <header>
@@ -35,7 +35,7 @@
     </section>
 
     <!-- Portfolio -->
-    <section id="portfolio" class="two">
+    <section id="portfolio" class="top">
         <div class="container">
             <header><h5 style="font-size: 1.5em;"><strong>Description</strong></h5>
             </header>
@@ -43,39 +43,81 @@
             <p style="text-align: left"> This game follows a doctor inside a patient's body tasked to eliminate all
                 viruses. A flying robot as a character companion follows the doctor and provides emotional and gameplay
                 support. The game consists of three stages each separated by a door. Players have to find the key to
-                access the next stage. The third level is intentionally balanced to be frustrating. This game was
-                developed as part of my Master Thesis.
-                In this project, I was responsible for: </br> </p>
+                access the next stage. This game was developed as part of my Master Thesis.
+                </br> </p>
             <header><h1 style="font-size: 1.5em;">Responsibilities</h1></header>
             <ul style="text-align: left">
-                <li> Implementing and designing 3 frustrating levels inside Unity Editor</li>
-                <li> Implementing 5+ enemy AI systems using C# scripts</li>
-                <li> Implementing AI companion system using C# scripts</li>
-                <li> Implementing dialogs and event systems using C# scripts and Unity UI systm</li>
-                <li> Designing 5+ enemy variations and move sets using C# scripts</li>
-                <li> Implementing companion audio system using Ai voice generators (Replica Studio)</li>
-                <li> Implementing various sound effects such as enemy shooting, hit sound, etc</li>
-                <li> Balancing game resources using Excel and Fibonacci series</li>
-                <li> Optimizing for browser using Unity Profiler and texture compression techniques, improving load
-                    times up to 60%
+                <li>Designed and implemented <u>3</u> modular levels inside <u>Unity</u>
+                </li>
+                <li>Implemented <u>5+</u> enemy AI systems using <u>C# scripts</u></li>
+                <li>Implemented robust <u>AI companion system</u> using <u>C# scripts</u></li>
+                <li>Integrated interactive <u>narrative elements</u> inside levels using <u>Unity</u></li>
+                <li>Designed and integrated <u>dynamic dialogue system</u> using Replica Studio and Unity UI</li>
+                <li>Created <u>5+</u> enemy variations and move sets using <u>C# scripts</u></li>
+                <li> Implemented companion <u>audio system</u> using Ai voice generators (Replica Studio)</li>
+                <li> Implemented various <u>sound effects</u> such as enemy shooting, hit sound, etc</li>
+                <li>Balanced game resources using <u>Excel</u> and <u>Fibonacci series</u></li>
+                <li>Optimized for browser using <u>Unity Profiler</u> and <u>texture compression</u>
+                    techniques, improving load times up to <u>60%</u>
+
+
+            </ul>
+
+            <header><h1 style="font-size: 1.5em; color: black">Design Process</h1></header>
+            <h3 style="text-align: left; font-size: 1em; color: black">Project Goal:</h3>
+            <p style="text-align: left;">Experiment to discover whether a character companion is effective
+                in soothing negative gameplay experience.</p>
+
+            <h3 style="text-align: left; font-size: 1em; color: black">Constraints:</h3>
+
+            <ul style="text-align: left">
+                <li>Short gameplay limit to 10-20 minutes</li>
+                <li>Focus on frustrating gameplay to ensure negative gameplay experience</li>
+
+
+            </ul>
+            <h3 style="text-align: left; font-size: 1em; color: black">Design Intentions:</h3>
+            <p style="text-align: left;">BioShooter follows a 4-step design with the first long hallway introducing the
+                core game mechanic of shooting. The rest of the first level and the entire second level serves two
+                purpose. First, allowing players to learn the game mechanics such as key-door system. Second, there are
+                interactive narrative elements in both levels ensuring plot progression and bonding with the character
+                companion. The third level introduces a twist to the gameplay by escalating the difficulty through
+                increasing the number of enemies, scarcity of resources and higher HP for enemies, with an exponentially
+                larger map. All are designed to ensure players are facing negative gameplay experience to effectively
+                measure the companion's impact.</p>
+
+            <h3 style="text-align: left; font-size: 1em; color: black">Iterations and Challenges:</h3>
+            <ul style="text-align: left">
+                <li>At first there were 3 different types of keys. The main key was supposed to open the door to the
+                    next level. Another key would open door to a fierce encounter with rewarding resources. The last key
+                    would open door to a safe area with resources. This idea was dropped since it was confusing for
+                    players to adapt to all these different mechanics in 10-20 minutes gameplay.
+                </li>
+                <li>The number of rooms in the second level were initially higher, but they were dropped to stick to the
+                    10-20 minutes gameplay.
+                </li>
+                <li>At first enemies could not shoot the player. After a couple of iterations it was evident that the
+                    gameplay was not frustrating enough. Therefore, 6 enemy variations were designed with unique move
+                    sets, animations, and HP and damage to ensure the frustrating gameplay and diversity.
                 </li>
 
 
             </ul>
 
-            <header><h1 style="font-size: 1.5em;">Media</h1></header>
+
+            <header><h1 style="font-size: 1.5em; color: black">Media</h1></header>
 
             <p><i> <a
                     href="https://play.unity.com/en/games/aa5745e4-b1d7-4cbc-af72-a770924f2eaa/personalized-companion">
                 Here you can play the game in web
-                browser with a personalized version of the companion.</a>
+                browser.</a>
             </i></p>
 
-            <p><i> <a
-                    href="https://play.unity.com/en/games/7c9a6340-fe74-46a7-8bfb-3266783b9c85/none-personalized-companion">
-                Here you can play the game in web
-                browser with a non-personalized version of the companion.</a>
-            </i></p>
+<!--            <p><i> <a-->
+<!--                    href="https://play.unity.com/en/games/7c9a6340-fe74-46a7-8bfb-3266783b9c85/none-personalized-companion">-->
+<!--                Here you can play the game in web-->
+<!--                browser with a non-personalized version of the companion.</a>-->
+<!--            </i></p>-->
 
             <div style="alignment: center" class="row">
 
@@ -87,7 +129,7 @@
 
             </div>
 
-<!--            <p> Here are some pictures of the game.</p>-->
+            <!--            <p> Here are some pictures of the game.</p>-->
 
             <div class="row"
                  style="display: flex; justify-content: center; align-items: flex-start; flex-wrap: nowrap; width: 100%;">
@@ -101,8 +143,8 @@
                 </article>
             </div>
 
-<!--            <p>This is the level layout consists of various room types and enemy density. <br>-->
-<!--                In-game economy resources was balanced using Fibonacci series.</p>-->
+            <!--            <p>This is the level layout consists of various room types and enemy density. <br>-->
+            <!--                In-game economy resources was balanced using Fibonacci series.</p>-->
 
 
             <!-- Add a back button here -->
